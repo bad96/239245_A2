@@ -20,7 +20,8 @@ public class Find {
 
     public Find() {
         Collection<File> all = new ArrayList<>();
-        addTree(new File("C:\\Users\\Badrul\\Documents\\NetBeansProjects\\Assignment2\\test"), all);
+        //addTree(new File("C:\\Users\\Badrul\\Documents\\NetBeansProjects\\Assignment2\\test"), all);
+        addTree(new File(System.getProperty("user.dir") + File.separator + "test"), all);
         //Change File Directory Here
         Collection<File> a = all;
         listJavaFile = filterJava(a);
